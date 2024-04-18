@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Fake Detection</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            background-image: url("../static/images/back_ground1.jpg");
+            background-size: cover;
+            background-position: center;
+            height: 500px; /* adjust height as needed */
+            text-align: center;
+            color: white;
+            padding-top: 50px; /* adjust top padding to center content */
+        }
+
+        .container {
+            margin: 20px;
+        }
+
+        .description {
+            float: left;
+            width: 60%;
+            padding: 20px;
+            background-color: "blue";
+            border-radius: 5px;
+            background-image: url("../static/images/face2.jpg");
+            color: "yellow";
+        }
+
+        .upload-btn {
+            float: right;
+            width: 30%;
+            padding: 20px;
+            background-color: "green";
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 768px) {
+            .description,
+            .upload-btn {
+                width: 100%;
+                float: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Deep Fake Detection</h1></br>
+        <h1>THE EYE OF AUTHENTICITY</h1>
+    </div>
+    <div class="container">
+        <div class="description">
+            <h2>About Deep Fake Detection</h2>
+            <p style="color:black ;">The term comes from the combination of the concepts “deep learning” and “fake”, alluding to the fake content generated with deep learning (AI)
+
+This refers to a spoofing technique, which uses an advanced artificial intelligence technique that collects data on physical movements, facial features and even voice, and processes it through an AI encoding algorithm or a Generative Antagonistic Network (GAN), to create fake but hyperrealistic audiovisual, graphical or voice content.  
+
+In other words, it is a video, image or audio created with AI, which imitates the appearance and/or voice of a person (synthetic media).</p>
+        </div>
+        <div class="upload-btn">
+            <h2>Upload Video</h2>
+            <input type="file" accept="video/*"></br></br>
+            <input type="submit" value="UPLOAD">
+        </div>
+    </div>
+</body>
+
+</html>

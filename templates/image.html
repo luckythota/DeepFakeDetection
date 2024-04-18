@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Deepfake Detection Tool</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <h1>Deepfake Detection Tool</h1>
+  <p>Upload an image or video to analyze for potential deepfakes.</p>
+  <form action="{{ url_for('upload') }}" method="POST" enctype="multipart/form-data">
+    <input type="file" name="media" accept=".jpg,.jpeg,.png,.mp4">
+    <input type="submit" value="Analyze">
+  </form>
+</body>
+</html>
